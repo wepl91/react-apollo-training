@@ -1,0 +1,9 @@
+.space-ship-view {
+  padding: 32px;
+  display: grid;
+  grid-gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  .space-ship-card {
+    width: 75%;
+  }
+}

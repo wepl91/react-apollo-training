@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { ChakraProvider } from "@chakra-ui/react"
-import { ApolloClient, InMemoryCache } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 const client = new ApolloClient({
   uri: 'https://api.spacex.land/graphql/',
@@ -15,7 +15,9 @@ const client = new ApolloClient({
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider>
-      <App />
+      <ApolloProvider client={client}>
+        <App />
+      </ApolloProvider>
     </ChakraProvider>
   </React.StrictMode>,
   document.getElementById('root')

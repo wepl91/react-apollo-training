@@ -4,7 +4,7 @@ import './styles.scss';
 import { Grid, GridItem } from "@chakra-ui/react"
 import SectionCard from '../../components/section-card';
 
-const Home = () => (
+const HomeView = () => (
   <div className="home">
     <h1>React GraphQL & Apollo training</h1>
     <div className="home__sections">
@@ -26,4 +26,4 @@ const Home = () => (
   </div>
 );
 
-export default Home;
+export default HomeView;
