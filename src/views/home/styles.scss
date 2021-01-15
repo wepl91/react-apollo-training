@@ -1,0 +1,13 @@
+.home {
+  text-align: center;
+  h1 {
+    font-size: 28px;
+    margin: 16px; 
+  }
+  &__sections {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 24px 0 24px;
+  }
+}
