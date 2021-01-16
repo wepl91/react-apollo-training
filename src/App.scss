@@ -1,5 +1,13 @@
 .app {
   text-align: center;
+  padding: 32px;
+  .chakra-breadcrumb {
+    display: flex;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 16px; 
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

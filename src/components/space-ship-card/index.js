@@ -8,7 +8,10 @@ import { Box, Image } from "@chakra-ui/react"
 const SectionCard = ({ spaceShip, history }) => (
   <div className="space-ship-card">
     <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
-      <Image src={spaceShip.image} alt={'space-ship'} />
+      <Image 
+        src={spaceShip.image || 'https://lighthousenavigation.com/wp-content/uploads/ship-placeholder.jpg'} 
+        alt={'space-ship'} 
+      />
       <Box
         mt="1"
         fontWeight="semibold"
@@ -19,7 +22,7 @@ const SectionCard = ({ spaceShip, history }) => (
         {`Nombre: ${spaceShip.name}`}
         <Box
           mt="1"
-          as="h6"
+          as="h4"
           lineHeight="tight"
           isTruncated
         >
